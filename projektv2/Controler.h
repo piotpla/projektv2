@@ -13,7 +13,7 @@ public:
 	InData read_file(std::string file_name);
 	OutData analyze(InData data_in);
 	void advanced();
-	void save_file(OutData data_out);
+	void save_file(OutData data_out, std::string file_name);
 	void show_error(std::vector<std::string> &newError);
 };
 

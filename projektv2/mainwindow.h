@@ -27,6 +27,8 @@ private slots:
 
     void on_otworz_triggered();
 
+    void on_analiza_triggered();
+
     void on_Zapis_triggered();
 
     void on_Zapiszjako_triggered();

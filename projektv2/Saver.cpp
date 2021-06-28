@@ -4,10 +4,10 @@
 #include <iostream>
 
 CSVsaver::CSVsaver() {};
-void CSVsaver::run( OutData & data)
+void CSVsaver::run( OutData & data, std::string file_name)
 {
 	std::fstream out;
-		out.open("danewyjsciowe.hgw", std::ios::out);
+		out.open(file_name, std::ios::out);
 		if (out.is_open())
 		{
 			out << "WYNIKI: \n";

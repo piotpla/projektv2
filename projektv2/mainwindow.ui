@@ -104,7 +104,7 @@
    </property>
    <property name="minimumSize">
     <size>
-     <width>200</width>
+     <width>950</width>
      <height>100</height>
     </size>
    </property>
@@ -124,13 +124,13 @@
     <number>2</number>
    </attribute>
    <widget class="QWidget" name="dockWidgetContents_9">
-    <widget class="QTableWidget" name="tableWidget">
+    <widget class="QTableWidget" name="tableWidget_2">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>20</y>
-       <width>351</width>
-       <height>341</height>
+       <x>10</x>
+       <y>10</y>
+       <width>931</width>
+       <height>192</height>
       </rect>
      </property>
     </widget>
@@ -184,13 +184,13 @@
        </rect>
       </property>
       <property name="minimum">
-       <number>21</number>
+       <number>0</number>
       </property>
       <property name="maximum">
-       <number>37</number>
+       <number>100</number>
       </property>
       <property name="value">
-       <number>22</number>
+       <number>0</number>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_3">
@@ -214,17 +214,17 @@ border-color: yellow;</string>
        <string>Progress:</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
+     <widget class="QTextBrowser" name="textBrowser">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>30</y>
-        <width>1890</width>
-        <height>941</height>
+        <width>1901</width>
+        <height>131</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
       </property>
      </widget>
     </widget>
@@ -239,9 +239,12 @@ border-color: yellow;</string>
    </property>
    <property name="minimumSize">
     <size>
-     <width>200</width>
+     <width>950</width>
      <height>40</height>
     </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgba(50,50,50,90);</string>
@@ -256,13 +259,19 @@ border-color: yellow;</string>
     <number>1</number>
    </attribute>
    <widget class="QWidget" name="dockWidgetContents_8">
-    <widget class="QTextBrowser" name="textBrowser">
+    <property name="baseSize">
+     <size>
+      <width>800</width>
+      <height>0</height>
+     </size>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
      <property name="geometry">
       <rect>
-       <x>-10</x>
-       <y>30</y>
-       <width>211</width>
-       <height>192</height>
+       <x>10</x>
+       <y>10</y>
+       <width>931</width>
+       <height>731</height>
       </rect>
      </property>
     </widget>

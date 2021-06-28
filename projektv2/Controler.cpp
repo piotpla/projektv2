@@ -36,9 +36,9 @@ void Controler::advanced() {
 
 };
 
-void Controler::save_file(OutData data_out) {
+void Controler::save_file(OutData data_out, std::string file_name) {
 	CSVsaver result;
-	result.run(data_out);
+	result.run(data_out, file_name);
 };
 
 void Controler::show_error(std::vector<std::string> &newError) {
