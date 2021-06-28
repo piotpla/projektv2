@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Szpachlanalyzer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;Plik</string>
+    </property>
+    <addaction name="action_Otw_rz"/>
+    <addaction name="separator"/>
+    <addaction name="action_Nowy"/>
+    <addaction name="separator"/>
+    <addaction name="action_Zapisz"/>
+    <addaction name="separator"/>
+    <addaction name="action_Zapisz_jako"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edycja">
+    <property name="title">
+     <string>&amp;Edycja</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_Cofnij"/>
+    <addaction name="separator"/>
+    <addaction name="action_Do_przodu"/>
+    <addaction name="separator"/>
+    <addaction name="action_Kopiuj"/>
+    <addaction name="separator"/>
+    <addaction name="action_Wytnij"/>
+    <addaction name="separator"/>
+    <addaction name="action_Wklej"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_Widok">
+    <property name="title">
+     <string>&amp;Widok</string>
+    </property>
+    <addaction name="action_Pomniejsz"/>
+    <addaction name="separator"/>
+    <addaction name="action_Powi_ksz"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edycja"/>
+   <addaction name="menu_Widok"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="otworz"/>
+   <addaction name="analiza"/>
+   <addaction name="Wykres"/>
+   <addaction name="Histogram"/>
+   <addaction name="Zapiszjako"/>
+   <addaction name="Zapis"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(20,20,20,50);</string>
+   </property>
+   <property name="windowTitle">
+    <string>Widok2</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_9"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_12">
+   <property name="minimumSize">
+    <size>
+     <width>58</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Logi:</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_19">
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1011</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(20, 20, 20)</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>0</y>
+        <width>1920</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>21</number>
+      </property>
+      <property name="maximum">
+       <number>37</number>
+      </property>
+      <property name="value">
+       <number>22</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+background-color: rgb(20,20,20);
+border-color: yellow;</string>
+      </property>
+      <property name="text">
+       <string>Progress:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>1890</width>
+        <height>941</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(50,50,50,90);</string>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>Widok1</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_8">
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>921</width>
+       <height>721</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="action_Otw_rz">
+   <property name="text">
+    <string>&amp;Otwórz</string>
+   </property>
+  </action>
+  <action name="action_Nowy">
+   <property name="text">
+    <string>&amp;Nowy</string>
+   </property>
+  </action>
+  <action name="action_Zapisz">
+   <property name="text">
+    <string>&amp;Zapisz</string>
+   </property>
+  </action>
+  <action name="action_Zapisz_jako">
+   <property name="text">
+    <string>&amp;Zapisz jako</string>
+   </property>
+  </action>
+  <action name="action_Cofnij">
+   <property name="text">
+    <string>&amp;Cofnij</string>
+   </property>
+  </action>
+  <action name="action_Do_przodu">
+   <property name="text">
+    <string>&amp;Do przodu</string>
+   </property>
+  </action>
+  <action name="action_Kopiuj">
+   <property name="text">
+    <string>&amp;Kopiuj</string>
+   </property>
+  </action>
+  <action name="action_Wytnij">
+   <property name="text">
+    <string>&amp;Wytnij</string>
+   </property>
+  </action>
+  <action name="action_Wklej">
+   <property name="text">
+    <string>&amp;Wklej</string>
+   </property>
+  </action>
+  <action name="action_Pomniejsz">
+   <property name="text">
+    <string>&amp;Pomniejsz</string>
+   </property>
+  </action>
+  <action name="action_Powi_ksz">
+   <property name="text">
+    <string>&amp;Powiększ</string>
+   </property>
+  </action>
+  <action name="otworz">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../nienazwany1/icons/open.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="toolTip">
+    <string>Otwórz plik</string>
+   </property>
+  </action>
+  <action name="analiza">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../nienazwany1/icons/analyze.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="toolTip">
+    <string>Analiza danych</string>
+   </property>
+  </action>
+  <action name="Wykres">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../nienazwany1/icons/chart.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="toolTip">
+    <string>Generuj wykres</string>
+   </property>
+  </action>
+  <action name="Histogram">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../nienazwany1/icons/histogram.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="toolTip">
+    <string>Generuj histogram</string>
+   </property>
+  </action>
+  <action name="Zapis">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../nienazwany1/icons/save.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="toolTip">
+    <string>Zapisz </string>
+   </property>
+  </action>
+  <action name="Pomoc">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../untitled/icons/pomoc.ico</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="toolTip">
+    <string>Pomoc</string>
+   </property>
+  </action>
+  <action name="Informacje">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../untitled/icons/info.ico</normaloff>../untitled/icons/info.ico</iconset>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="toolTip">
+    <string>Informacje o programie</string>
+   </property>
+  </action>
+  <action name="Zapiszjako">
+   <property name="icon">
+    <iconset>
+     <normalon>../nienazwany1/icons/saveas.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="toolTip">
+    <string>Zapisz jako</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
