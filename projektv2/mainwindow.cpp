@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "Controler.h"
 #include "QtWidgets"
 #include <QApplication>
 #include <QFile>
@@ -24,7 +25,9 @@ MainWindow::~MainWindow()
 }
 
 
-
+InData data_from_file;
+OutData data_results;
+Controler control;
 
 
 
@@ -58,16 +61,68 @@ void MainWindow::on_otworz_triggered()
         QString text = in.readAll();
 
         // Put the text in the textEdit widget, tak zpliku wchodzic beda tabele i wykresy i wyniki
-       // ui->textEdit->setText(text);
+       ui->textBrowser->setText(text);
+
+       std::string file_name = fileName.toStdString();
+       data_from_file = control.read_file(file_name);
+       //data_results = control.analyze(data_from_file);
+      // control.save_file(data_results);
+
+       const int size_tab = data_from_file.data.size();
+      
+           ui->tableWidget->setColumnCount(size_tab);
+           QStringList labels;
+          
+
+       for (unsigned int i = 0; i < data_from_file.data.size(); ++i)
+       {
+
+           for (unsigned int j = 0; j < data_from_file.data[i].size(); ++j)
+           {
+               if(i==0)
+               {
+                  // std::string txt = data_from_file.data[i][j];
+                   QString s = QString::number(data_from_file.data[i][j]);
+                   labels << s;
+                   ui->tableWidget->setHorizontalHeaderLabels(labels);
+               }
+
+               QTableWidgetItem* elementwiersza = new QTableWidgetItem;
+               elementwiersza->setText("dupa"); //QString::number(data_from_file.data[i][j])
+              
+               ui->tableWidget->setItem(i, j, elementwiersza);
+           }
+           ui->tableWidget->insertRow(i);
+          
+
+       }
+      
+       QTableWidgetItem* elementwiersza = new QTableWidgetItem;
+       elementwiersza->setText("dupa"); //QString::number(data_from_file.data[i][j])
+
+       ui->tableWidget->setItem(2, 2, elementwiersza);
+      
+      
+     
+      
+      
+
+      
+
+     
 
 
-        QTextStream in(&file);
+      
+      
+      
+       
+      
 
         // Copy text in the string
-        QString text = in.readAll();
+       
 
         // Put the text in the textEdit widget, tak zpliku wchodzic beda tabele i wykresy i wyniki
-        ui->textBrowser->setText(text);
+       // ui->textBrowser->setText(text);
 
 
 

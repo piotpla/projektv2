@@ -1,0 +1,102 @@
+﻿„projektv2.exe” (Win32): załadowano „C:\Users\pooee\source\repos\projektv2\x64\Release\projektv2.exe”. Moduł został skompilowany bez symboli.
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\ntdll.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\kernel32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\KernelBase.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\ucrtbase.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\shell32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\msvcp_win.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\user32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\win32u.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\gdi32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\gdi32full.dll”. 
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\bin\Qt6Widgets.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\bin\Qt6Core.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\bin\Qt6Gui.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\vcruntime140.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\vcruntime140_1.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\ole32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\advapi32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\msvcrt.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\rpcrt4.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\sechost.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\combase.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\dwmapi.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\ws2_32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\uxtheme.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\msvcp140.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\msvcp140_1.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\d3d11.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\dxgi.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\mpr.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\userenv.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\netapi32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\winmm.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\version.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\cryptbase.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\srvcli.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\netutils.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\imm32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\SHCore.dll”. 
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\platforms\qwindows.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\oleaut32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\wtsapi32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\kernel.appcore.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\bcryptprimitives.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\windows.storage.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\wldp.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\shlwapi.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\profapi.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\powrprof.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\umpdc.dll”. 
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\styles\qwindowsvistastyle.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qgif.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qicns.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qico.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qjpeg.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qsvg.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\bin\Qt6Svg.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qtga.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qtiff.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qwbmp.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „E:\qt\6.1.2\msvc2019_64\plugins\imageformats\qwebp.dll”. Symbole zostały załadowane.
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\DWrite.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\d3d9.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_272b5c540127d6d2\nvldumdx.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\msasn1.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\cryptnet.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\crypt32.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\wintrust.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\imagehlp.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\cryptsp.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\rsaenh.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\bcrypt.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_272b5c540127d6d2\nvd3dumx.dll”. 
+Wątek 0x3b64 zakończył działanie z kodem 0 (0x0).
+„projektv2.exe” (Win32): zwolniono „C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_272b5c540127d6d2\nvd3dumx.dll”
+„projektv2.exe” (Win32): zwolniono „C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_272b5c540127d6d2\nvldumdx.dll”
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\msctf.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\clbcatq.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\DataExchange.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\dcomp.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\twinapi.appcore.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\TextInputFramework.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\CoreMessaging.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\CoreUIComponents.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\ntmarta.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\WinTypes.dll”. 
+„projektv2.exe” (Win32): załadowano „C:\Windows\System32\WinTypes.dll”. 
+„projektv2.exe” (Win32): zwolniono „C:\Windows\System32\WinTypes.dll”
+„projektv2.exe” (Win32): zwolniono „C:\Windows\System32\dcomp.dll”
+„projektv2.exe” (Win32): zwolniono „C:\Windows\System32\twinapi.appcore.dll”
+„projektv2.exe” (Win32): zwolniono „C:\Windows\System32\DataExchange.dll”
+Wątek 0x3e68 zakończył działanie z kodem 0 (0x0).
+Wątek 0x4234 zakończył działanie z kodem 0 (0x0).
+Wątek 0x2ed8 zakończył działanie z kodem 0 (0x0).
+Wątek 0x58cc zakończył działanie z kodem 0 (0x0).
+Wątek 0xb7c zakończył działanie z kodem 0 (0x0).
+Wątek 0x16a0 zakończył działanie z kodem 0 (0x0).
+Wątek 0x5928 zakończył działanie z kodem 0 (0x0).
+Wątek 0x83d4 zakończył działanie z kodem 0 (0x0).
+Wątek 0x5acc zakończył działanie z kodem 0 (0x0).
+Wątek 0x5c18 zakończył działanie z kodem 0 (0x0).
+Program „[5652] projektv2.exe” zakończył działanie z kodem 0 (0x0).

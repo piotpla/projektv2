@@ -26,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>1920</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -123,12 +123,23 @@
    <attribute name="dockWidgetArea">
     <number>2</number>
    </attribute>
-   <widget class="QWidget" name="dockWidgetContents_9"/>
+   <widget class="QWidget" name="dockWidgetContents_9">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>351</width>
+       <height>341</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QDockWidget" name="dockWidget_12">
    <property name="minimumSize">
     <size>
-     <width>58</width>
+     <width>82</width>
      <height>200</height>
     </size>
    </property>
@@ -229,7 +240,7 @@ border-color: yellow;</string>
    <property name="minimumSize">
     <size>
      <width>200</width>
-     <height>35</height>
+     <height>40</height>
     </size>
    </property>
    <property name="styleSheet">
@@ -245,13 +256,13 @@ border-color: yellow;</string>
     <number>1</number>
    </attribute>
    <widget class="QWidget" name="dockWidgetContents_8">
-    <widget class="QTableView" name="tableView">
+    <widget class="QTextBrowser" name="textBrowser">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>921</width>
-       <height>721</height>
+       <x>-10</x>
+       <y>30</y>
+       <width>211</width>
+       <height>192</height>
       </rect>
      </property>
     </widget>
@@ -318,14 +329,25 @@ border-color: yellow;</string>
    </property>
    <property name="icon">
     <iconset>
-     <normalon>../nienazwany1/icons/open.png</normalon>
-    </iconset>
+     <normaloff>icons/open.png</normaloff>icons/open.png</iconset>
    </property>
    <property name="text">
     <string>1</string>
    </property>
    <property name="toolTip">
     <string>Otwórz plik</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+   <property name="priority">
+    <enum>QAction::HighPriority</enum>
    </property>
   </action>
   <action name="analiza">
@@ -334,8 +356,7 @@ border-color: yellow;</string>
    </property>
    <property name="icon">
     <iconset>
-     <normalon>../nienazwany1/icons/analyze.png</normalon>
-    </iconset>
+     <normaloff>icons/analyze.png</normaloff>icons/analyze.png</iconset>
    </property>
    <property name="text">
     <string>2</string>
@@ -350,8 +371,7 @@ border-color: yellow;</string>
    </property>
    <property name="icon">
     <iconset>
-     <normalon>../nienazwany1/icons/chart.png</normalon>
-    </iconset>
+     <normaloff>icons/chart.png</normaloff>icons/chart.png</iconset>
    </property>
    <property name="text">
     <string>3</string>
@@ -366,8 +386,7 @@ border-color: yellow;</string>
    </property>
    <property name="icon">
     <iconset>
-     <normalon>../nienazwany1/icons/histogram.png</normalon>
-    </iconset>
+     <normaloff>icons/histogram.png</normaloff>icons/histogram.png</iconset>
    </property>
    <property name="text">
     <string>4</string>
@@ -382,8 +401,7 @@ border-color: yellow;</string>
    </property>
    <property name="icon">
     <iconset>
-     <normalon>../nienazwany1/icons/save.png</normalon>
-    </iconset>
+     <normaloff>icons/save.png</normaloff>icons/save.png</iconset>
    </property>
    <property name="text">
     <string>5</string>
@@ -426,8 +444,7 @@ border-color: yellow;</string>
   <action name="Zapiszjako">
    <property name="icon">
     <iconset>
-     <normalon>../nienazwany1/icons/saveas.png</normalon>
-    </iconset>
+     <normaloff>icons/saveas.png</normaloff>icons/saveas.png</iconset>
    </property>
    <property name="text">
     <string>6</string>
