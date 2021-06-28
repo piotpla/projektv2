@@ -10,6 +10,11 @@
 #include <QMessageBox>
 #include <QTableWidget>
 #include <QDateTime>
+#include <QtWidgets/QMainWindow>
+#include <QtCharts/QChartView>
+#include <QtCharts/QLineSeries>
+#include <QDialog>
+#include "Chart.h"
 QString fileName = "";
 bool zapisano = 0;
 MainWindow::MainWindow(QWidget *parent)
@@ -28,9 +33,13 @@ InData data_from_file;
 OutData data_results;
 Controler control;
 
+
+
 void MainWindow::on_otworz_triggered()
 {
+    ui->tableWidget->setRowCount(0);
 	ui->progressBar->setValue(0);
+	
     // Opens a dialog that allows you to select a file to open
         QString fileName = QFileDialog::getOpenFileName(this, "Otwórz plik");
 
@@ -43,8 +52,8 @@ void MainWindow::on_otworz_triggered()
         // Try to open the file as a read only file if possible or display a
         // warning dialog box
         if (!file.open(QIODevice::ReadOnly | QFile::Text)) {
-            QMessageBox::warning(this, "Uwaga!", "Nie można otworzyć pliku: " + file.errorString());
-			ui->textBrowser->append("BŁĄD! Nie można otworzyć pliku: " + file.errorString());
+            QMessageBox::warning(this, QTime::currentTime().toString("hh:mm:ss") + " " + "Uwaga!", "Nie można otworzyć pliku: " + file.errorString());
+			ui->textBrowser->append(QTime::currentTime().toString("hh:mm:ss") + " BŁĄD! Nie można otworzyć pliku: " + file.errorString());
 
             return;
         }
@@ -55,16 +64,14 @@ void MainWindow::on_otworz_triggered()
         // Interface for reading text
         QTextStream in(&file);
 
-        // Copy text in the string
+    
         QString text = in.readAll();
 
-        // Put the text in the textEdit widget, tak zpliku wchodzic beda tabele i wykresy i wyniki
-      // ui->textBrowser->setText(text);
+    
 
        std::string file_name = fileName.toStdString();
        data_from_file = control.read_file(file_name);
-       //data_results = control.analyze(data_from_file);
-      // control.save_file(data_results);
+   
 
        const int size_tab = data_from_file.data[0].size();
       
@@ -87,7 +94,7 @@ void MainWindow::on_otworz_triggered()
 				   }
 				   else
 				   {
-					   QString temp = QString::number(j);                     //cyfra kolumny
+					   QString temp = QString::number(j);                    
 					   QString ps = "Kolumna ";
 					   ps.append(temp);
 					   labels << ps;
@@ -128,13 +135,11 @@ void MainWindow::on_otworz_triggered()
       
        }
 
-        // Copy text in the string
-        // Put the text in the textEdit widget, tak zpliku wchodzic beda tabele i wykresy i wyniki
-       // ui->textBrowser->setText(text);
+       
 
 	   ui->progressBar->setValue(90);
 
-        // Close the file
+        
         file.close();
 		ui->progressBar->setValue(100);
 		ui->textBrowser->append(QTime::currentTime().toString("hh:mm:ss") + " " + "Plik otwarto poprawnie");
@@ -142,9 +147,15 @@ void MainWindow::on_otworz_triggered()
 }
 
 //========================================================================================================================================
+void MainWindow::on_action_Otw_rz_triggered()
+{
+   on_otworz_triggered();
+}
 
+//========================================================================================================================================
 void MainWindow::on_analiza_triggered()
 {
+     ui->tableWidget_2->setRowCount(0);
 	ui->progressBar->setValue(0);
     data_results = control.analyze(data_from_file);
     int size_min = data_results.min.size();
@@ -211,7 +222,7 @@ void MainWindow::on_analiza_triggered()
 	ui->textBrowser->append(QTime::currentTime().toString("hh:mm:ss") + " " + "Analiza wykonana poprawnie");
 
 }
-
+//========================================================================================================================================
 
 
 void MainWindow::on_Zapis_triggered()
@@ -225,53 +236,53 @@ void MainWindow::on_Zapis_triggered()
     else {
         ui->progressBar->setValue(0);
       
-        QFile file(fileName);
-       
-       
-     
-        QTextStream out(&file);
-        //QString text = ui->textEdit->toPlainText(); na zapis danych
-        //out << text;
-        file.close();
+        std::string file_name = fileName.toStdString();
+        control.save_file(data_results, file_name);
         ui->progressBar->setValue(100);
+
         zapisano = 1;
 		ui->textBrowser->append(QTime::currentTime().toString("hh:mm:ss") + " " + "Zapisano plik");
     }
 }
-
-
-
+//========================================================================================================================================
+void MainWindow::on_action_Zapisz_triggered()
+{
+    on_Zapis_triggered();
+}
+//========================================================================================================================================
 void MainWindow::on_Zapiszjako_triggered()
 {
-    // Opens a dialog for saving a file
+    
      fileName = QFileDialog::getSaveFileName(this,
             tr("Zapisz jako"), "",
             tr("Analiza (*.hgw);;Wszystkie pliki (*)"));
 
-        // An object for reading and writing files
         
-
-      
 
        
         setWindowTitle(fileName);
         std::string file_name = fileName.toStdString();
         control.save_file(data_results, file_name);
-        // Interface for writing text
-        //QTextStream out(&file);
-
-
-
-        // Copy text in the textEdit widget and convert to plain text, zapis naszych danych
-        //QString text = ui->textEdit->toPlainText();
-
-        // Output to file, cd zapis danych
-       // out << text;
-
-        // Close the file
+     
         
 		zapisano = 1;
         ui->textBrowser->append(QTime::currentTime().toString("hh:mm:ss") + " " + "Zapisano plik w lokalizacji: " + fileName);
        
 }
 
+//========================================================================================================================================
+
+void MainWindow::on_action_Zapisz_jako_triggered()
+{
+    on_Zapiszjako_triggered();
+}
+
+//=========================================================================================================================================
+
+void MainWindow::on_Wykres_triggered() 
+{
+	//chart = new Chart(this);
+
+    chart = new Chart(this);
+    chart->show();
+}

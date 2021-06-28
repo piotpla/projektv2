@@ -6,6 +6,7 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <QMessageBox>
+#include "Chart.h"
 //#include <QPrinter>
 //#include <QPrintDialog>
 #include <QtPrintSupport/QPrinter>
@@ -24,8 +25,11 @@ public:
 
 private slots:
 
+   
 
     void on_otworz_triggered();
+
+    void on_action_Otw_rz_triggered();
 
     void on_analiza_triggered();
 
@@ -33,8 +37,15 @@ private slots:
 
     void on_Zapiszjako_triggered();
 
+    void on_action_Zapisz_triggered();
+
+    void on_action_Zapisz_jako_triggered();
+
+    void on_Wykres_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile = "";
+	Chart *chart;
 };
 #endif // MAINWINDOW_H

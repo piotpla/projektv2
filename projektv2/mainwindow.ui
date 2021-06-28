@@ -134,6 +134,16 @@
       </rect>
      </property>
     </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>209</y>
+       <width>931</width>
+       <height>531</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QDockWidget" name="dockWidget_12">
@@ -375,9 +385,6 @@ border-color: yellow;</string>
    </property>
   </action>
   <action name="Wykres">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
    <property name="icon">
     <iconset>
      <normaloff>icons/chart.png</normaloff>icons/chart.png</iconset>

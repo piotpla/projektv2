@@ -52,6 +52,9 @@
     <ClCompile Include="Saver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Chart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Loader.h">
@@ -80,9 +83,15 @@
     <QtMoc Include="mainwindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Chart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Chart.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

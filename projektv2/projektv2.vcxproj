@@ -62,6 +62,9 @@
     <ClCompile>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\qt\6.1.2\msvc2019_64\lib\Qt6Charts.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
@@ -90,8 +93,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Chart.cpp" />
     <ClCompile Include="Saver.cpp" />
     <QtRcc Include="projektv2.qrc" />
+    <QtUic Include="Chart.ui" />
     <QtUic Include="mainwindow.ui" />
     <ClCompile Include="Advanced.cpp" />
     <ClCompile Include="Analyzer.cpp" />
@@ -104,6 +109,7 @@
   <ItemGroup>
     <ClInclude Include="Advanced.h" />
     <ClInclude Include="Analyzer.h" />
+    <QtMoc Include="Chart.h" />
     <ClInclude Include="Controler.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Loader.h" />
