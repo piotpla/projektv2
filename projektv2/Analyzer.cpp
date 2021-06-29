@@ -1,5 +1,6 @@
 #include "Analyzer.h"
 
+// Metoda przyjmuj¹ca vektor 2D i licz¹ca minum dla ka¿dej kolumny
 Minimum::Minimum() {};
 void Minimum::run(InData& data_in, OutData& data_out)
 {	
@@ -14,7 +15,7 @@ void Minimum::run(InData& data_in, OutData& data_out)
 		}
 	
 };
-
+// Metoda przyjmuj¹ca vektor 2D i licz¹ca maximum dla ka¿dej kolumny
 Maximum::Maximum() {};
 void Maximum::run(InData& data_in, OutData& data_out)
 {
@@ -30,7 +31,7 @@ void Maximum::run(InData& data_in, OutData& data_out)
 		data_out.max.push_back(max);
 	}
 };
-	
+// Metoda przyjmuj¹ca vektor 2D i licz¹ca medianê dla ka¿dej kolumny
 Median::Median() {};
 void Median::run(InData& data_in, OutData& data_out)
 {
@@ -50,7 +51,7 @@ void Median::run(InData& data_in, OutData& data_out)
 	}
 };
 	
-
+// Metoda przyjmuj¹ca vektor 2D i licz¹ca œredni¹ dla ka¿dej kolumny
 Average::Average() {};
 void Average::run(InData& data_in, OutData& data_out)
 {

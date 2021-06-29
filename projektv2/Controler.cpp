@@ -1,6 +1,8 @@
 #include "Controler.h"
 
-Controler::Controler() {};
+Controler::Controler() {}; // konstruktor klasy Controler
+
+// metoda realizujaca odczyt pliku (sprawdza rozszerzenie i uruchamia dalej odpowiedni loader)
 InData Controler::read_file(std::string file_name) 
 {
 	std::string enl = file_name.substr((file_name.size() - 3), 3);
@@ -14,6 +16,7 @@ InData Controler::read_file(std::string file_name)
 	}
 };
 
+// Metoda do obs³ugi analizy przez wartwê GUI
 OutData Controler::analyze(InData data_in) {
 	OutData dane_out;
 
@@ -36,6 +39,7 @@ void Controler::advanced() {
 
 };
 
+// funkcja zapisujaca obliczone rozwiazanie do pliku
 void Controler::save_file(OutData data_out, std::string file_name) {
 	CSVsaver result;
 	result.run(data_out, file_name);

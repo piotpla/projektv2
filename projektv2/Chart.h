@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #ifndef CHART_H
 #define CHART_H
 
@@ -23,3 +23,5 @@ private:
 	Ui::Chart ui;
 };
 #endif // !CHART_H
+
+*/

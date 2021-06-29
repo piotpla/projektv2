@@ -16,7 +16,7 @@ public:
 	virtual void run(const std::string& file_name, InData & result) = 0;
 };
 
-// klasa dziedziczace do konketnych obliczen
+// klasa dziedziczace do wczytywania plikow CSV
 class CSV : public Loader
 {
 public:

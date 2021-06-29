@@ -66,9 +66,6 @@
     <ClInclude Include="Advanced.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Analyzer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Controler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -78,12 +75,15 @@
     <ClInclude Include="Saver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Chart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Analyzer.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Chart.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

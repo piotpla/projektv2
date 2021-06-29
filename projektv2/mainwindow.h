@@ -25,7 +25,7 @@ public:
 
 private slots:
 
-   
+   //Deklaklaracja przycisków
 
     void on_otworz_triggered();
 
@@ -43,9 +43,11 @@ private slots:
 
     void on_Wykres_triggered();
 
+    void on_Histogram_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile = "";
-	Chart *chart;
+	//Chart *chart;
 };
 #endif // MAINWINDOW_H

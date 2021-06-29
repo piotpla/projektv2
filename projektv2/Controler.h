@@ -7,14 +7,15 @@
 #include <vector>
 #include <string>
 
+//klasa kontrolera
 class Controler {
 public:
-	Controler();
-	InData read_file(std::string file_name);
-	OutData analyze(InData data_in);
-	void advanced();
-	void save_file(OutData data_out, std::string file_name);
-	void show_error(std::vector<std::string> &newError);
+	Controler(); // konstruktor
+	InData read_file(std::string file_name); // odczyt pliku
+	OutData analyze(InData data_in); // analiza danych
+	void advanced(); // zaawansowane
+	void save_file(OutData data_out, std::string file_name); // zapis pliku
+	void show_error(std::vector<std::string> &newError); // wypis bledow
 };
 
 #endif

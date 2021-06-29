@@ -1,6 +1,6 @@
 #include "Chart.h"
 //using namespace QtCharts;
-Chart::Chart(QWidget *parent)
+/*Chart::Chart(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
@@ -26,7 +26,7 @@ Chart::Chart(QWidget *parent)
 	chart->legend()->setVisible(true);
 	chart->legend()->setAlignment(Qt::AlignBottom);
 
-
+	*/
 
 	/*QChartView *chartView = new QChartView(chart);
 	chartView->setRenderHint(QPainter::Antialiasing);
@@ -38,9 +38,9 @@ Chart::Chart(QWidget *parent)
 
 
 
-}
+//}
 
-Chart::~Chart()
-{
-}
+//Chart::~Chart()
+//{
+//}
 

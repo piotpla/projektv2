@@ -12,7 +12,7 @@ public:
 	virtual void run(OutData & Outdata, std::string file_name) = 0;
 };
 
-// klasa dziedziczace do konketnych obliczen
+// klasa zapisu pliku
 class CSVsaver : public Saver
 {
 public:

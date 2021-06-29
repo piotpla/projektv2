@@ -109,7 +109,7 @@
   <ItemGroup>
     <ClInclude Include="Advanced.h" />
     <ClInclude Include="Analyzer.h" />
-    <QtMoc Include="Chart.h" />
+    <ClInclude Include="Chart.h" />
     <ClInclude Include="Controler.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Loader.h" />
