@@ -75,11 +75,11 @@
     <ClInclude Include="Saver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Chart.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Analyzer.h">
       <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chart.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

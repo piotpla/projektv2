@@ -22,6 +22,5 @@ public:
 private:
 	Ui::Chart ui;
 };
-#endif // !CHART_H
+#endif // !CHART_H*/
 
-*/

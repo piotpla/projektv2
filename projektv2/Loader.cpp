@@ -11,7 +11,7 @@ void CSV::run(const std::string& file_name, InData & result)
 	std::fstream in;
 	in.open(file_name, std::ios::in); // otwarcie pliku
 	
-
+	
 	if (in.is_open())
 	{
 		std::string line;
@@ -29,7 +29,12 @@ void CSV::run(const std::string& file_name, InData & result)
 				{
 					v.push_back(std::stod(field));
 				}
-				else std::cerr << "pusta linia .\n";
+				else
+				{
+					throw 99;
+					return;
+					
+				}
 			}
 
 			result.data.push_back(v);
@@ -40,5 +45,6 @@ void CSV::run(const std::string& file_name, InData & result)
 	{
 		std::cerr << "plik nie zostal otworzony!"; // error
 		error.newError.push_back("Err 0: Nie mozna otworzyc pliku");
+	}
 	}
 }

@@ -1,6 +1,6 @@
-#include "Chart.h"
+/*#include "Chart.h"
 //using namespace QtCharts;
-/*Chart::Chart(QWidget *parent)
+Chart::Chart(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
