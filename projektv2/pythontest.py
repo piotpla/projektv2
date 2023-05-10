@@ -18,3 +18,4 @@ total_time=end-start
 print(total_time) 
 set_progress(total_time)
 set_progress(total_time)
+print("Najs")
