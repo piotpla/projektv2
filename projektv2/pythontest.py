@@ -14,6 +14,7 @@ result_fib=Fibonacci(40)
 print(result_fib) 
 set_progress(result_fib) 
 end=time.time() 
-total_time=end-start print(total_time) 
+total_time=end-start 
+print(total_time) 
 set_progress(total_time)
 set_progress(total_time)
